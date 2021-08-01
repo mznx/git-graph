@@ -1,0 +1,64 @@
+html, body, canvas, textarea, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrapper {
+    height:          100%;
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: center;
+}
+
+#app {
+    display:         flex;
+    flex-direction:  row;
+
+    .column {
+
+        h2 {
+
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    
+        textarea {
+            border: 1px solid black;
+            width:  450px;
+            height: 600px;
+            resize: none;
+        }
+
+        p {
+            font-style: italic;
+        }
+    }
+}
+
+#commit_info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    // border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 4px -1px;
+
+    h4 {
+        margin: 6px 10px;
+    }
+
+    p {
+        margin: 6px 10px;
+    }
+
+}
